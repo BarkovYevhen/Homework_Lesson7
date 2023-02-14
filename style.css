@@ -1,0 +1,121 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1230px;
+  height: 80px;
+  background: #60c1bd;
+  border: 2px solid #60c1bd;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 25px 100px 0px;
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ffffff;
+  margin-top: 27px;
+  margin-left: 32px;
+}
+
+.menu {
+  margin-left: 460px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+  list-style: none;
+  position: relative;
+}
+
+.menu_list {
+  display: flex;
+  padding-top: 34px;
+}
+.menu_link,
+.sub-menu_link,
+.sub_sub-menu_link {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #284854;
+}
+
+.menu_list > li {
+  margin-right: 90px;
+}
+
+.menu_list > li:hover .sub-menu_list {
+  display: block;
+}
+
+.sub-menu_list {
+  display: none;
+  min-width: 300px;
+  position: absolute;
+  left: 0px;
+  top: 24px;
+  padding-top: 20px;
+}
+
+.sub-menu_list > li {
+  background-color: #f4f6f0;
+  display: inline-block;
+  padding: 5px 50px 5px 5px;
+}
+
+.sub-menu_list > li:hover {
+  background-color: #60c1bd;
+}
+
+.sub-menu_list > li:hover .sub_sub-menu_list {
+  display: block;
+}
+
+.sub_sub-menu_list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding-left: 0px;
+  min-width: 300px;
+}
+
+.sub_sub-menu_list > li {
+  background-color: #f4f6f0;
+  display: inline-block;
+  padding: 5px 50px 5px 5px;
+}
+
+.sub_sub-menu_list > li:hover {
+  background-color: #60c1bd;
+}
+
+.menu_login {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+  padding: 2px 30px;
+}
+
